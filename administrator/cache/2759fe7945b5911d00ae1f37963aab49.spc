@@ -1,0 +1,1 @@
+a:3:{s:3:"url";s:39:"http://www.gmapfp.org/fr/newscontactmap";s:8:"feed_url";s:60:"http://www.gmapfp.org/fr/newscontactmap?format=feed&type=rss";s:5:"build";s:14:"20090627192103";}

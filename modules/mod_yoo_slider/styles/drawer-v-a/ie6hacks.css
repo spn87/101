@@ -1,0 +1,33 @@
+/**
+* YOOslider Joomla! Module
+*
+* @version   1.5.0
+* @author    yootheme.com
+* @copyright Copyright (C) 2007 YOOtheme Ltd. & Co. KG. All rights reserved.
+* @license	 GNU/GPL
+*/
+
+
+div.drawer-v-a ul.yoo-sliderlist .item-bl {
+	background: url(images/item_bl_ie6.png) 0 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-bl {
+	background: url(images/item_bl_hover_ie6.png) 0 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-br {
+	background: url(images/item_br_ie6.png) 100% 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-br {
+	background: url(images/item_br_hover_ie6.png) 100% 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-b {
+	background: url(images/item_b_ie6.png) 0 100% repeat-x;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-b {
+	background: url(images/item_b_hover_ie6.png) 0 100% repeat-x;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>ttbooking</name>
+	<files folder="site">
+		<filename>controller.php</filename>
+		<filename>ttbooking.php</filename>
+		<filename>index.html</filename>
+		<filename>models/ttbooking.php</filename>
+		<filename>views/ttbooking/index.html</filename>
+		<filename>views/ttbooking/view.html.php</filename>
+		<filename>views/ttbooking/tmpl/index.html</filename>
+		<filename>views/ttbooking/tmpl/default.php</filename>
+		<filename>views/index.html</filename>
+	</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+
+
+	<administration>
+		<menu>T Booking</menu>
+		<files folder="admin">
+			<filename>ttbooking.php</filename>
+			<filename>index.html</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>controller.php</filename>
+			
+			<filename>controllers/ttbooking.php</filename>
+			<filename>controllers/ttbookingcheckin.php</filename>
+			<filename>controllers/ttbookingcheckout.php</filename>
+			<filename>controllers/index.html</filename>
+			
+			<filename>models/ttbookings.php</filename>
+			<filename>models/ttbooking.php</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/ttbooking.php</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/ttbooking/view.html.php</filename>
+			<filename>views/ttbooking/tmpl/form.php</filename>
+			<filename>views/ttbooking/index.html</filename>
+			<filename>views/ttbooking/tmpl/index.html</filename>
+			
+			<filename>views/ttbookings/view.html.php</filename>
+			<filename>views/ttbookings/index.html</filename>
+			<filename>views/ttbookings/tmpl/default.php</filename>
+			<filename>views/ttbookings/tmpl/index.html</filename>
+			
+			<filename>views/ttbookingcheckin/view.html.php</filename>
+			<filename>views/ttbookingcheckin/tmpl/default.php</filename>
+			<filename>views/ttbookingcheckin/index.html</filename>
+			<filename>views/ttbookingcheckin/tmpl/index.html</filename>
+			
+			<filename>views/ttbookingcheckout/view.html.php</filename>
+			<filename>views/ttbookingcheckout/index.html</filename>
+			<filename>views/ttbookingcheckout/tmpl/default.php</filename>
+			<filename>views/ttbookingcheckout/tmpl/index.html</filename>
+		</files>		
+	</administration>
+</install>

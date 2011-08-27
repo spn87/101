@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>YOOslider</name>
+	<author>YOOtheme</author>
+	<creationDate>July 2007</creationDate>
+	<copyright>Copyright (C) 2007 YOOtheme Ltd. &amp; Co. KG</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@yootheme.com</authorEmail>
+	<authorUrl>http://www.yootheme.com</authorUrl>
+	<version>1.5.0</version>
+	<description><![CDATA[
+
+<span style="font-size: 13px;">
+YOOslider module of the YOOtheme club for Joomla! 1.5. Requires mootools 1.1
+<br /><br />YOOtheme website<br /><a href="http://www.yootheme.com/">http://www.yootheme.com</a>.
+<br /><br />YOOtheme demo server<br /><a href="http://demo.yootheme.com/">http://demo.yootheme.com</a>.
+</span>
+
+<h3 style="clear: both;">Changelog</h3>
+
+<b>1.5.1</b><br />
+<span style="margin: 0px 0px 0px 10px;">
+- Fixed php short open tag
+</span>
+<br /><br />
+
+<b>1.5.0</b><br />
+<span style="margin: 0px 0px 0px 10px;">
+- Initial Release
+</span>
+<br /><br />
+
+]]></description>
+	<files>
+		<filename module="mod_yoo_slider">mod_yoo_slider.php</filename>
+		<filename>mod_yoo_slider.css</filename>
+		<filename>mod_yoo_slider.js</filename>
+		<filename>mod_yoo_slider.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>tmpl/_item.php</filename>
+		<filename>styles/drawer-v-a/ie6hacks.css</filename>
+		<filename>styles/drawer-v-a/images/index.html</filename>
+		<filename>styles/drawer-v-a/images/item_b.png</filename>
+		<filename>styles/drawer-v-a/images/item_bg.png</filename>
+		<filename>styles/drawer-v-a/images/item_bl.png</filename>
+		<filename>styles/drawer-v-a/images/item_bl_hover.png</filename>
+		<filename>styles/drawer-v-a/images/item_bl_hover_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_bl_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_br.png</filename>
+		<filename>styles/drawer-v-a/images/item_br_hover.png</filename>
+		<filename>styles/drawer-v-a/images/item_br_hover_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_br_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_b_hover.png</filename>
+		<filename>styles/drawer-v-a/images/item_b_hover_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_b_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_l.png</filename>
+		<filename>styles/drawer-v-a/images/item_l_ie6.png</filename>
+		<filename>styles/drawer-v-a/images/item_r.png</filename>
+		<filename>styles/drawer-v-a/images/item_r_ie6.png</filename>
+		<filename>styles/drawer-v-a/index.html</filename>
+		<filename>styles/drawer-v-a/style.css</filename>
+		<filename>styles/index.html</filename>
+		<filename>styles/slider-h-a/ie6hacks.css</filename>
+		<filename>styles/slider-h-a/images/index.html</filename>
+		<filename>styles/slider-h-a/images/item_l.png</filename>
+		<filename>styles/slider-h-a/images/item_l_hover.png</filename>
+		<filename>styles/slider-h-a/images/item_l_hover_ie6.png</filename>
+		<filename>styles/slider-h-a/images/item_l_ie6.png</filename>
+		<filename>styles/slider-h-a/images/item_m.png</filename>
+		<filename>styles/slider-h-a/images/item_m_hover.png</filename>
+		<filename>styles/slider-h-a/images/item_m_hover_ie6.png</filename>
+		<filename>styles/slider-h-a/images/item_m_ie6.png</filename>
+		<filename>styles/slider-h-a/images/item_r.png</filename>
+		<filename>styles/slider-h-a/images/item_r_hover.png</filename>
+		<filename>styles/slider-h-a/images/item_r_hover_ie6.png</filename>
+		<filename>styles/slider-h-a/images/item_r_ie6.png</filename>
+		<filename>styles/slider-h-a/index.html</filename>
+		<filename>styles/slider-h-a/style.css</filename>
+	</files>
+	<params>
+		<param name="catid" type="category" default="0" label="Category" description="A content category which items are used for the YOOslider" />
+		<param name="mode" type="list" default="drawer" label="Mode" description="The define the slider behavior.&lt;br&gt;&lt;br&gt;Drawer: Overlapping with z-index, item remains expanded on mouse leave.&lt;br&gt;&lt;br&gt;Slider: Scaling width using overflow: hidden, shrink the item on mouse leave">
+			<option value="drawer">Drawer</option>
+			<option value="slider">Slider</option>
+		</param>
+		<param name="style" type="list" default="drawer-v-a" label="Style" description="The YOOslider styling">
+			<option value="drawer-v-a">Drawer Vertical Style A</option>
+			<option value="slider-h-a">Slider Horizontal Style A</option>
+		</param>
+		<param name="layout" type="list" default="vertical" label="Layout" description="The layout to display the YOOslider">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="item_size" type="text" default="150" label="Item size (px)" description="Size of a displayed item. When aligned vertical it's the items height. When aligned horizontal it's the items width. " />
+		<param name="item_minimized" type="text" default="50" label="Item minimized size (px)" description="Size of a minimized item. Width/Height depending on the alignment." />
+		<param name="items" type="text" default="4" label="No. of Items" description="Maximum no of items to display" />
+		<param name="module_height" type="text" default="150" label="Module height (px)" description="Module height, only needed for horizontal layout" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

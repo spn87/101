@@ -1,0 +1,271 @@
+/* example for Style 1 - Normal Pastel Blue
+background - #5C5CA1
+dark color- #494980
+light color - #D2D2E6
+background darker - #4444BF 
+
+*/
+.cpg_table_style1 {
+   background-color: #5C5CA1;
+   color: #494980;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px; 
+           
+           width: 100%;
+  
+   }      
+      
+                               
+.cpg_tablehead_style1
+{
+   
+}
+
+ .cpg_row_style1 {
+   color: #494980;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   text-align: center;  
+ }  
+
+.cpg_link_style1 {
+    border: 1px;
+   color: #000000;
+   padding: 0px;
+   margin: 0px;
+} 
+.cpg_img_style1 {
+   border: 1px solid #494980;
+   color: #D2D2E6;
+   background-color: #D2D2E6;
+   text-align: center;    
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+ }
+   
+   .cpg_cell_style1 {
+   color: #D2D2E6;    
+   background-color: #4444BF;
+   padding-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 10px;
+   text-align: center;
+}    
+
+.cpg_link_style1 {
+   border: 1px;
+   color: #000000;
+}   
+
+/* example for Style 2 - Light Pastel yellow
+background - #FFF2BF
+dark color- #BFAC60
+light color - #FFFAE6
+background darker - #FFE680  
+
+*/
+
+.cpg_table_style2 {
+   background-color: #FFF2BF;
+   color: #BFAC60;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px; 
+           
+           width: 100%;
+  
+   }      
+      
+                               
+.cpg_tablehead_style2
+{
+   
+}
+
+ .cpg_row_style2 {
+   color: #BFAC60;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   text-align: center;  
+ }  
+
+.cpg_link_style2 {
+    border: 1px;
+   color: #000000;
+   padding: 0px;
+   margin: 0px;
+} 
+.cpg_img_style2 {
+   border: 1px solid #BFAC60;
+   color: #FFFAE6;
+   background-color: #FFFAE6;
+   text-align: center;    
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+ }
+   
+   .cpg_cell_style2 {
+   color: #BFAC60;    
+   background-color: #FFE680 ;
+   padding-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 10px;
+   text-align: center;
+}    
+
+.cpg_link_style2 {
+   border: 1px;
+   color: #000000;
+}   
+
+
+/* example for Style 3 - Dark Pastel green
+background - #C0CC8F
+dark color- #788059
+light color - #E1E6CF
+background darker - #ACBF60   
+
+*/
+
+.cpg_table_style3 {
+   background: #C0CC8F;
+   color: #788059;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px; 
+           
+           width: 100%;
+  
+   }      
+      
+                               
+.cpg_tablehead_style3
+{
+   
+}
+
+ .cpg_row_style3 {
+  /* background: #A3BF30; */
+   color: #788059;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   text-align: center;  
+ }  
+
+.cpg_link_style3 {
+    border: 1px;
+   color: #000000;
+   padding: 0px;
+   margin: 0px;
+} 
+.cpg_img_style3 {
+   border: 1px solid #788059;
+   color: #E1E6CF;
+   background-color: #E1E6CF;
+   text-align: center;    
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+ }
+   
+   .cpg_cell_style3 {
+   color: #788059;    
+   background-color: #ACBF60;
+   padding-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 10px;
+   text-align: center;
+}    
+
+.cpg_link_style3 {
+   border: 1px;
+   color: #000000;
+}   
+   
+   
+
+
+/* example for Style 4 - normal Pastel green
+ 
+background - #C8E673
+dark color- #6F8040
+light color - #E0E6CF
+background darker - #9BBF30 
+*/
+
+.cpg_table_style4 {
+   background: #CFE673;
+   color: #738040;
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px; 
+           
+           width: 100%;
+  
+   }  
+
+.cpg_tablehead_style4
+{
+   
+}
+
+ .cpg_row_style4 {
+   background-color: #9BBF30;      
+   color: #738040;
+   padding-bottom: 0px;
+   padding-left: 0px;
+   padding-right: 0px;
+   padding-top: 0px;
+   text-align: center;  
+ }  
+
+.cpg_link_style4 {
+    border: 1px;
+   color: #000000;
+   padding: 0px;
+   margin: 0px;
+} 
+.cpg_img_style4 {
+   border: 1px solid #738040;
+   color: #E1E6CF;
+   background-color: #E1E6CF;
+   text-align: center;    
+   padding-bottom: 5px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 5px;
+ }
+   
+   .cpg_cell_style4 {
+   color: #738040;    
+   background-color: #A3BF30;
+   padding-bottom: 10px;
+   padding-left: 5px;
+   padding-right: 5px;
+   padding-top: 10px;
+   text-align: center;
+}    
+
+.cpg_link_style4 {
+   border: 1px;
+   color: #000000;
+}

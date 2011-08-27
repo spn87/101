@@ -1,0 +1,90 @@
+------------------------------------------------------------------------------------------------------
+					GALLERY VIEW V 1.0.1
+------------------------------------------------------------------------------------------------------
+
+Hello there,
+
+Thank you for downloading the extension. Please go through this notes quickly.
+Some instructions are very important to make this module function correctly.
+
+Still any issues, let me know.
+
+Contact : contact@yashvyas.in
+
+IF YOU LIKE THIS EXTENSION PLEASE CONSIDER YOUR REVIEW AND VOTE ON JED.
+
+LIMITATION : 1.0.1 : Only one module can be publish on a page. If you publish more than one instances on the same
+             page the script conflicts and only the first module will work properly.
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+
+INSTALLTION INSTRUCTIONS
+--------------------------
+
+- Install the module from Joomla backend.
+- Publish to the desired module position.
+- The module will be published on the position you have selected with
+the default parameters.
+
+UNDERSTANDING THE PARAMETERS :
+-------------------------------
+
+- LOAD jQuery: Default YES. If you template already loads the 
+
+- LOAD other scripts : Select Yes by default. No, if you are publishing more than one module instances on the
+                      same page.
+
+- UNIQUE ID : Give any Id which will be quniue from other gallery module instances on the page.
+              i.e. value : 1 will reflect the ID : photos-1.
+
+- IMAGE PATH: Path of the images. to be taken from.
+              IMPORTANT : i.e if your main images are in images/stories/sample_folder
+                          Put your thumbnail folder (folder name : thumb) in folder : sample_folder
+                          So, thumbnail path will be : images/stories/sample_folder/thumb
+
+- HEIGHT : The height of the module. This height excludes the filmstrip. In PX.
+
+- WIDTH : This width of the module. In PX.
+
+- THEME : Dark/Light. You can change the color of the filmstip's active thumbnail's border.
+          Dark : Border will be black.
+          Light : Border will be white.
+
+- FILMSTRIP : Chooese to show filmstrip or not. If "No" is selected it can be used as simple image rotator. best               for Homepage banners.
+
+- THUMBNAIL GENERATE : 
+
+          AUTO : The thumbnails will be generated autometically from the images you have uploaded in "gallery"
+                  directory.
+                 Images path : www.YOURDOMAIN.com/modules/mod_galleryview/gallery
+          Manual : In case of the auto the generated thumbnails are not appropriate and streatched. You can choose
+                 this option. 
+                 The thumbnails will be taken from the thumb images folder.
+                 Thumb Images path : www.YOURDOMAIN.com/modules/mod_galleryview/gallery/thumb
+                 
+                  IF YOU CHOOSE MANUAL THUMBNAILS
+                  --------------------------------
+                  - You will have to upload to slide show images to this folder :gallery
+                    THUBNAILS SHOULD BE SQUARE. I.e 50px X 50px.
+
+                    (www.YOURDOMAIN.com/modules/mod_galleryview/gallery )
+
+                  - FOR EXAMPLE :The images names are : 1.jpg, 2.jpg, 3.jpg
+
+                  - Upload the thumbnails to this folder : thumb
+                    (www.YOURDOMAIN.com/modules/mod_galleryview/gallery/thumb )
+                  
+**IMPORTANT       - The thumbnail names will be:
+                       1_thumb.jpg, 2_thumb.jpg, 3_thumb.jpg
+                     Thumbnail images will be suffixed by "_thumb" & KEEP BOTH THE EXTENSIONS SAME, FOR MAIN IMAGE                     AND THUMBNAIL IMAGES.
+
+- TRANSITION INTERVAL : The transition/slide change time. In MS. Put 0 if no auto sliding required.
+
+- THUMB WIDTH (PX) : The width/height of thumbnail in PX.(THUBNAILS SHOULD BE SQUARE). 
+
+- TRANSITION SPEED (MS) : The speed of active thumnail frame, moving one to another. Higher value will be slower.
+
+- BACKGROUND COLOR (i.e. #000000) : Background of the module.
+
+- BORDER COLOR (i.e. #000000) : The border of the module.

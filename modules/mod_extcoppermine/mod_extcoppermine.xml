@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Image Module for Coppermine Photo Gallery</name>
+	<author>Andre Diez</author>
+	<creationDate>Feb 07, 2007</creationDate>
+	<copyright>(C) 2007 - 2009 Der-Reisende.de All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>info@Der-Reisende.de</authorEmail>
+	<authorUrl>www.Der-Reisende.de</authorUrl>
+	<version>1.5.1</version>
+	<description>
+	mod_ExtCoppermine - Version 1.5.1, 08.02.2009
+	This module connects two of the best OpenSource projects - the gallery from Coppermine and the CMS - Joomla, on which this website is based on. This modul allows you to configure the design and multiple options to blend fine into you website - from a single picture without title and destination link - to a multiple row/column design, using CSS and links to pictures. Additionally I started to support the Javascript Highslide for eyecatching Popup effects
+	</description>
+	<files>
+	<filename module="mod_extcoppermine">mod_extcoppermine.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>changelog.txt</filename>
+        <filename>css/mod_extcoppermine.css</filename>
+        <filename>css/highslide.css</filename>
+         <filename>css/index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+	</files>
+
+// Beginn der Parameter
+<params>
+
+<param name="settings" type="list" default="advanced" label="Settings selection" description="Choice of simple or advanced settings">
+			<option value="simple">Simple</option>
+			<option value="advanced">Advanced</option>
+		</param>
+
+<param name="@spacer" type="spacer" default="" label="Simple settings" description="Simple settings for a single picture" />
+
+<param name="id_pid" type="text" default="" size="5" label="Number of the picture" description="Number of one picture - only use for simple settings" />
+
+<param name="@spacer" type="spacer" default="" label="Advanced settings" description="Advanced settings for multiple pictures" />
+
+<param name="private_album" type="list" default="1" label="Show pictures from nonpublic albums" description="Select Yes to show pictures from private user albums">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+
+<param name="quelle" type="list" default="album" label="Source" description="Choice: album or category / album and category ">
+			<option value="album">only albums</option>
+			<option value="cat">only categories</option>
+			<option value="album_cat">Albums and categories</option>
+			</param>
+
+<param name="id_album" type="text" default="" size="5" label="Number of the album" description="Number of the albums - divided by comma" />
+
+<param name="id_category" type="text" default="" size="5" label="Number of the category" description="Number of the categories - divided by comma" />
+
+<param name="typ" type="list" default="" label="Picture selection" description="Choice:Which pictures to show ? Note: Option lastcommented is not restricted by the source selection !">
+			<option value="last">last added</option>
+			<option value="random">random</option>
+			<option value="mostviewed">most viewed</option>
+			<option value="toprated">best rated</option>
+			<option value="mostrated">most rated</option>
+			<option value="lastcommented">last commented</option>
+</param>
+
+<param name="keyword" type="text" default="" size="10" label="Filter keywords" description="Search Keywords in title or keywords - divided by comma" />
+
+<param name="text" type="text" default="" size="10" label="Filter Text" description="Search text in file description - divided by comma" />
+
+<param name="owner" type="text" default="" size="10" label="Filter by owner" description="Filter pictures for specficic owner - divided by comma" />
+
+<param name="rows" type="text" default="1" size="1" label="Number of rows" description="Number of rows to be displayed" />
+<param name="column" type="text" default="1" size="1" label="Number of columns" description="Number of columns to be displayed" />
+
+<param name="@spacer" type="spacer" default="" label="General settings" description="General settings" />
+
+<param name="cpmFetch" type="text" default="../gallery/cpmfetch" label="Path to Coppermine Fetch" description="You can use a relative path-  like '../gallery/cpmfetch' - if your gallery and joomla installation are at the same webspace and directory level as in most configurations.
+or you can use the path on local file system to the cpmfetch folder including the folder itself without the trailing slash, like '/www/html/gallery/cpmfetch'. It must be a subfolder of your gallery instalation !
+ !">
+		</param>
+
+<param name="cpmfetch_config" type="text" default="cpmfetch_config.php" label="Name of configuration file" description="Name of configuration file - can be changed but should stay like it is">
+		</param>
+
+<param name="@spacer" type="spacer" default="" label="CSS configuration" description="NEW - Choice of 4 predefined CSS styles for all relevant Tags - easy to customize - you can still use the direct CSS styles below" />
+
+<param name="css_choice" type="list" default="style3" label="Choice of predefined CSS styles" description="Choice: 4 different predefined styles ">
+			<option value="no_value">Not used</option>
+			<option value="style1">Style1</option>
+			<option value="style2">Style2</option>
+			<option value="style3">Style3</option>
+			<option value="style4">Style4</option>
+			</param>
+
+<param name="@spacer" type="spacer" default="" label="Manual CSS configuration" description="Here you can add the CSS classes for the different Tags - add these CSS classes to your template css file or the module own CSS file ! If something is entered here - it will overwrite the already predefined CSS setting for this specific Tag" />
+
+<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+
+<param name="css_cpgtable" type="text" default="" size="15" label="CSS class for TABLE" description="CSS class for the table, TABLE TAG"/>
+<param name="css_cpgtablehead" type="text" default="" size="15" label="CSS class for TH" description="CSS class for the  tablehead, TH TAG" />
+<param name="css_cpgrow" type="text" default="" size="15" label="CSS class for TR" description="CSS class for the tablerow, TR TAG" />
+<param name="css_cpgcolumn" type="text" default="" size="15" label="CSS class for TD" description="CSS class for tablecell, TD TAG" />
+<param name="css_cpglink" type="text" default="" size="15" label="CSS class for A" description="CSS class for a Link, A HREF TAG" />
+<param name="css_cpgimage" type="text" default="" size="15" label="CSS class for IMG" description="CSS class for the picture, IMG TAG" />
+
+<param name="cpgimagewidth" type="text" default="" size="5" label="Width of the picture" description="width of the picture in pixel, the aspect-ratio stays the same" />
+<param name="cpgimageheight" type="text" default="" size="5" label="Height of the picture" description="Heigth of the picture in pixel, the aspect-ratio stays the same" />
+
+<param name="@spacer" type="spacer" default="" label="Link configuration" description="Configuration for linking of the pictures, Detailed description of parameters are available at the my website"/>
+
+<param name="subtitle" type="textarea" cols="20" rows="2" default="" label="Description of the picture" description="Subtitle below the picture. Complete Parameterlist - please read documentation at www.der-reisende.de or documentation of cpmFetch"/>
+
+<param name="alttag" type="textarea" cols="20" rows="2" default="" label="Description of the ALT Tag" description="Text appears when moveover by mouse. Complete Parameterlist - please read documentation at www.der-reisende.de or documentation of cpmFetch"/>
+
+<param name="imagesize" type="list" default="thumb" label="Type of picture" description="Choice: linking to - picturesize">
+			<option value="thumb">Standard thumbnail</option>
+			<option value="int">Intermediate picture</option>
+			<option value="large">Large picture</option>
+</param>
+
+<param name="imagelink" type="list" default="normal" label="Type of link" description="where to link to">
+			<option value="normal">Link to the gallery picture</option>
+			<option value="none">No link</option>
+			<option value="album">Link to the  album</option>
+			<option value="category">Link to the  category</option>
+			<option value="thumb">Link to the  Thumbnail</option>
+			<option value="large">Link to the large picture</option>
+			<option value="highslide_large">Link to the large picture with highslide effect</option>
+			<option value="highslide_normal">Link to the medium size picture with highslide effect</option>
+</param>
+
+<param name="windowtarget" type="list" default="_parent" label="Link destination" description="Where to open the Link">
+			<option value="_parent">Same window</option>
+			<option value="_blank">New Window</option>
+</param>
+
+<param name="noimage" type="radio" default="" label="No image" description="Will show no images">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+</param>
+
+	<param name="subtitlelink" type="radio" default="" label="Subtitle link" description="Subtitle becomes link also.">
+			<option value="">No</option>
+			<option value="1">Yes</option>
+</param>
+
+</params>
+
+<params group="advanced">
+		<param name="hsPathOption" type="radio" default="1" label="Choice of local path or URL" description="Lets you use a local path under joomla or URL as path to highslide.">
+			<option value="1">local path to highslide</option>
+			<option value="0">complete URL to highslide</option>
+		</param>
+		<param name="hsPath" type="text" default="" size="50" label="local path or URL to HighSlide" description="local path or URL to the HighSlide folder without precedent and trailing slashes. Standard for local path should be 'highslide'" />
+		<param name="hsAddoptions" type="text" size="50" default="" label="HighSlide options" description="HighSlide options divided by ';'. Example: hs.fadeInOut=true;hs.outlineType='rounded-white. Please read documentation for further Highslide options at http://vikjavev.no/highslide/ref/" />
+
+		<param name="hsLoadingText" type="text" default="" size="20" label="Loadingtext" description="Loading Text" />
+		
+		<param name="hsAutosize" type="radio" default="hs.allowSizeReduction = true;" label="Autosize picture" description="Reduce size of a picture, if browser resolution is too small">
+			<option value="hs.allowSizeReduction = true;">Yes</option>
+			<option value="hs.allowSizeReduction = false;">No</option>
+		</param>
+<param name="hsAlign" type="list" default="hs.align='center';" size="20" label="Alignment of the Popup" description="Alignment of the Popup pictures - 1. - option will center all popups, 2. will not do so, open under the link">
+			<option value="hs.align='center';">Centered</option>
+			<option value="hs.align='auto';">Automatic</option>
+		</param>
+		
+		<param name="hsCredits" type="radio" default="hs.showCredits=true;" label="HighSlide credits" description="Shows a Powered by... label at the upper left corner">
+			<option value="hs.showCredits=true;">enabled</option>
+			<option value="hs.showCredits=false;">disabled</option>
+		</param>
+		
+		<param name="hsCreditsText" type="text" default="Powered by Der-Reisende.de" size="20" label="Credit Text" description="Text to show at the credits overlay" />
+		<param name="hsCreditsLink" type="text" default="http://www.der-reisende.de" size="20" label="Credit Link" description="Link for the credit" />
+		<param name="hsCreditsTitle" type="text" default="Goto the homepage of mod_extCoppermine" size="20" label="Credit Title" description="Credit Tooltip" />
+		
+		<param name="hsBlockRightClick" type="radio" default="hs.blockRightClick=true;" label="HighSlide block right click" description="Block right clicking on the full size image.">
+			<option value="hs.blockRightClick=true;">Yes</option>
+			<option value="hs.blockRightClick=false;">No</option>
+		</param>
+		<param name="hsOutlineType" type="list" default="" label="HighSlide outline type" description="Defines a graphic outline to display around the expanded content">
+			<option value="">No Border</option>
+			<option value="hs.outlineType='rounded-white';">Rounded-white</option>
+			<option value="hs.outlineType='rounded-black';">Rounded-black</option>
+			<option value="hs.outlineType='glossy-dark';">Glossy-dark</option>
+			<option value="hs.outlineType='beveled';">Beveled</option>
+			<option value="hs.outlineType='drop-shadow';">Drop-shadow</option>
+			<option value="hs.outlineType='outer-glow';">Outer-glow</option>
+		</param>
+    	<param name="hsDimmingOpacity" type="list" default="" label="Background dimming" description="=Defines the opacity of the background of a dimmed page.">
+			<option value="">Disabled</option>
+			<option value="0.1">10%</option>
+			<option value="0.2">20%</option>
+			<option value="0.3">30%</option>
+			<option value="0.4">40%</option>
+			<option value="0.5">50%</option>
+			<option value="0.6">60%</option>
+			<option value="0.7">70%</option>
+			<option value="0.8">80%</option>
+			<option value="0.9">90%</option>
+			<option value="1">100%</option>
+		</param>
+    	<param name="hsBlur" type="radio" default="0" label="Blur" description="Blur non active pictures. Does not work together with background dimming.">
+			<option value="1">Blur enabled</option>
+			<option value="0">Blur disabled</option>
+		</param>
+    	<param name="hsFadeInOut" type="radio" default="" label="Fade In/out" description="=Adds a fading effect to the regular expand/close effect.">
+			<option value="hs.fadeInOut=true;">Fade In/Out Enabled</option>
+			<option value="">Fade In/Out Disabled</option>
+		</param>
+		<param name="hsCaptionEval" type="list" default="" label="HighSlide picture caption" description="Caption text below the picture">
+            <option value="">No caption</option>
+            <option value="this.thumb.alt">ALT attribute from IMG Tag</option>
+            <option value="this.thumb.title">TITLE attribute from IMG Tag</option>
+            <option value="this.a.title">TITLE attribute from A HREF Tag</option>
+        </param>
+
+	</params>
+</install>

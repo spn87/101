@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module">
+	<name>Easy Slider Pro</name>
+	<author>Turnkeye.com</author>
+	<creationDate>2010</creationDate>
+	<copyright>Copyright (C) 2010. All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>info@turnkeye.com</authorEmail>
+	<authorUrl>www.turnkeye.com</authorUrl>
+	<version>1.0.5</version>
+    <description> 
+		Easy and powerful Ajax jQuey slider for Joomla!
+    </description>
+	<files>
+		<filename module="mod_easy_slider">mod_easy_slider.php</filename>
+		<filename module="mod_easy_slider">01.jpg</filename>
+		<filename module="mod_easy_slider">02.jpg</filename>
+		<filename module="mod_easy_slider">03.jpg</filename>
+		<filename module="mod_easy_slider">04.jpg</filename>
+		<filename module="mod_easy_slider">05.jpg</filename>
+		<filename module="mod_easy_slider">css/style.css</filename>
+		<filename module="mod_easy_slider">css/btn_prev.gif</filename>
+		<filename module="mod_easy_slider">css/btn_next.gif</filename>
+		<filename module="mod_easy_slider">jquery.js</filename>
+		<filename module="mod_easy_slider">easySlider.js</filename>
+	</files>
+	<params>
+		<param type="spacer" name="@spacer" label="" default="Slider width and height:" description="" />
+        	<param name="width" type="text" default="490" label="Width of the slider (pixels)" description="Width of the slider in pixels" />
+	        <param name="height" type="text" default="241" label="Height of the slider (pixels)" description="Height of the slider in pixels" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param type="spacer" name="@spacer" label="" default="Slider options:" description="" />
+		<param name="numeric" type="radio" default="show" label="Navigation type" description="Navigation type">
+			<option value="show">Numeric navigation</option>
+			<option value="hide">Next/Prev buttons</option>
+		</param>
+		<param name="auto" type="list" default="show" label="Automatic sliding" description="Automatic sliding, if enabled slides will be scrolled automatically.">
+			<option value="show">Enable</option>
+			<option value="hide">Disable</option>
+		</param>
+                <param name="hide_load" type="list" default="hide" label="Show banner only after all images are loaded" description="If enabled, the banner will be shown only after all images of the banner are loaded." >
+                        <option value="show">Enable</option>
+                        <option value="hide">Disable</option>
+                </param>
+                <param name="delay_first" type="text" default="0" label="Delay before image scrolling start" description="Delay (in miliseconds) before the image scrolling start." >
+                </param>
+
+		<param name="continuous" type="list" default="show" label="Continuous motion" description="If set to true clicking the next button when the slider reached the end will simply continue showing all of the slides again with continuous motion. Combining this option with auto (both set to true) you'll get endless animation.">
+			<option value="show">Enable</option>
+			<option value="hide">Disable</option>
+		</param>
+		<param name="speed" type="text" default="800" label="Speed" description="Animation speed in milliseconds, default value is 800" />
+		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param type="spacer" name="@spacer" label="" default="Images:" description="" />
+		<param name="demo" type="radio" default="show" label="Show default images" description="If enabled, default demo images will be shown, otherwise the defined images will be used (use 'Image names' field to define the images).">
+			<option value="show">Show default DEMO images</option>
+			<option value="hide">Use my custom images</option>
+		</param>
+		<param name="imagesfolder" type="text" default="modules/mod_easy_slider/" label="Images folder" description="Relative path to the images folder, by default it is 'modules/mod_easy_slider/'" />
+
+		<param name="imagesnames" type="textarea" cols="40" rows="10" label="Image names" description="Image names separated with comma, for example: 1.gif, 2.gif, 3.gif etc." default="01.jpg, 02.jpg, 03.jpg" />
+		<param name="imagecaptions" type="textarea" cols="40" rows="10" label="ALT descriptions" description="ALT descriptions of the images separate with comma (good for SEO)" default="Image 1 Caption, Image 2 Caption, Image 3 Caption" />
+		<param name="imagelinks" type="textarea" cols="40" rows="10" label="URLs" description="URLs of the banners separated with comma" default="http://www.turnkeye.com, http://www.google.com, http://www.joomla.org" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param type="spacer" name="@spacer" label="" default="Colors of navigation buttons:" description="" />
+		<param name="bback" type="text" default="#DAF3F8" label="Simple button: background" description="Navigation buttons background" />
+		<param name="bcolor" type="text" default="black" label="Simple button: border color" description="Navigation buttons border color" />
+		
+		<param name="sback" type="text" default="blue" label="Selected button: background" description="Selected navigation button background" />
+		<param name="scolor" type="text" default="#fff" label="Selected button: border color" description="Selected navigation border color" />
+
+	</params>
+</install>

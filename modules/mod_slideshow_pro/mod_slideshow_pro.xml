@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>SlideShow Pro</name>
+	<author>Ümit Kenan Gönüllü</author>
+	<creationDate>February 2010</creationDate>
+	<copyright>Joomla! Türkçe Eğitim ve Destek Sitesi</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>bilgi@jt.gen.tr</authorEmail>
+	<authorUrl>www.jt.gen.tr</authorUrl>
+	<version>2.1</version>
+	<description>DESCSLIDESHOWPRO</description>
+	<files>
+		<filename module="mod_slideshow_pro">mod_slideshow_pro.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+		<filename>images/index.html</filename>
+		<filename>images/logo.png</filename>
+		<filename>photos/index.html</filename>
+		<filename>photos/photo01.jpg</filename>
+		<filename>photos/photo02.jpg</filename>
+		<filename>photos/photo03.jpg</filename>
+		<filename>photos/photo04.jpg</filename>
+		<filename>photos/photo05.jpg</filename>
+		<filename>scripts/index.html</filename>
+		<filename>scripts/jcarousellite_1.0.1c4.js</filename>
+		<filename>scripts/jquery.js</filename>
+		<filename>scripts/jquery.easing.1.3.js</filename>
+		<filename>scripts/jquery.easing.compatibility.js</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+	</files>
+
+	<languages>
+		<language tag="en-GB">en-GB.mod_slideshow_pro.ini</language>
+		<language tag="tr-TR">tr-TR.mod_slideshow_pro.ini</language>
+	</languages>
+
+	<params>
+		<param name="folder" type="text" size="50" default="modules/mod_slideshow_pro/photos" label="IMAGE FOLDER" description="DESCIMAGEFOLDER" /> 
+		<param name="showallimages" type="radio" default="0" label="SHOW ALL IMAGES" description="DESCSHOWALLIMAGES">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+		<param name="images" type="textarea" default="photo01.jpg\nphoto02.jpg\nphoto03.jpg\nphoto04.jpg\nphoto05.jpg" label="IMAGES" description="DESCIMAGES" cols="50" rows="4" /> 
+		<param name="titles" type="textarea" default="Photo Title 1\nPhoto Title 2\nPhoto Title 3\nPhoto Title 4\nPhoto Title 5" label="TITLES" description="DESCTITLES" cols="50" rows="4" /> 
+		<param name="urls" type="textarea" default="www.jt.gen.tr\nwww.jt.gen.tr\nwww.jt.gen.tr\nwww.jt.gen.tr\nwww.jt.gen.tr" label="URLS" description="DESCURLS" cols="50" rows="4" /> 
+		<param name="linked" type="radio" default="1" label="LINKED URLS" description="DESCLINKEDURLS">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+		<param name="target" type="list" default="_blank" label="TARGET" description="DESCTARGET">
+			<option value="_blank">TARGET_BLANK</option> 
+			<option value="_parent">TARGET_PARENT</option> 
+			<option value="_self">TARGET_SELF</option> 
+			<option value="_top">TARGET_TOP</option> 
+		</param>
+		<param name="addhttp" type="radio" default="1" label="ADDHTTP" description="DESCADDHTTP">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param>
+	</params>
+
+	<params group="advanced">
+		<param name="layout" type="list" default="horizontal" label="LAYOUT" description="DESCLAYOUT">
+			<option value="horizontal">HORIZONTAL</option>
+			<option value="vertical">VERTICAL</option>
+		</param>
+		<param name="easing" type="list" default="" label="EASING" description="DESCEASING">
+			<option value="">NONE</option>
+			<option value="jswing">jswing</option>
+			<option value="def">def</option>
+			<option value="easeInQuad">easeInQuad</option>
+			<option value="easeOutQuad">easeOutQuad</option>
+			<option value="easeInOutQuad">easeInOutQuad</option>
+			<option value="easeInCubic">easeInCubic</option>
+			<option value="easeOutCubic">easeOutCubic</option>
+			<option value="easeInOutCubic">easeInOutCubic</option>
+			<option value="easeInQuart">easeInQuart</option>
+			<option value="easeOutQuart">easeOutQuart</option>
+			<option value="easeInOutQuart">easeInOutQuart</option>
+			<option value="easeInQuint">easeInQuint</option>
+			<option value="easeOutQuint">easeOutQuint</option>
+			<option value="easeInOutQuint">easeInOutQuint</option>
+			<option value="easeInSine">easeInSine</option>
+			<option value="easeOutSine">easeOutSine</option>
+			<option value="easeInOutSine">easeInOutSine</option>
+			<option value="easeInExpo">easeInExpo</option>
+			<option value="easeOutExpo">easeOutExpo</option>
+			<option value="easeInOutExpo">easeInOutExpo</option>
+			<option value="easeInCirc">easeInCirc</option>
+			<option value="easeOutCirc">easeOutCirc</option>
+			<option value="easeInOutCirc">easeInOutCirc</option>
+			<option value="easeInElastic">easeInElastic</option>
+			<option value="easeOutElastic">easeOutElastic</option>
+			<option value="easeInOutElastic">easeInOutElastic</option>
+			<option value="easeInBack">easeInBack</option>
+			<option value="easeOutBack">easeOutBack</option>
+			<option value="easeInOutBack">easeInOutBack</option>
+			<option value="easeInBounce">easeInBounce</option>
+			<option value="easeOutBounce">easeOutBounce</option>
+			<option value="easeInOutBounce">easeInOutBounce</option>
+		</param>
+		<param name="speed" type="text" size="5" default="1000" label="SPEED" description="DESCSPEED" />
+		<param name="delay" type="text" size="5" default="500" label="DELAY" description="DESCDELAY" />
+		<param name="visible" type="text" size="5" default="3" label="VISIBLE" description="DESCVISIBLE" /> 
+		<param name="hoverPause" type="list" default="off" label="HOVERPAUSE" description="DESCHOVERPAUSE">
+			<option value="off">OFF</option> 
+			<option value="on">ON</option>
+		</param>
+
+	</params>
+
+	<params group="other">
+		<param name="loadjquery" type="radio" default="1" label="LOAD JQUERY" description="DESCLOADJQUERY">
+			<option value="0">No</option> 
+			<option value="1">Yes</option> 
+		</param> 
+		<param name="boxname" type="text" default="slideshowprobox" label="BOX NAME" description="DESCBOXNAME" /> 
+		<param name="boxwidth" type="text" size="10" default="100%" label="BOX WIDTH" description="DESCBOXWIDTH" />
+		<param name="boxheight" type="text" size="10" default="100%" label="BOX HEIGHT" description="DESCBOXHEIGHT" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="imgwidth" type="text" size="10" default="170px" label="IMAGE WIDTH" description="DESCIMAGEWIDTH" />
+		<param name="imgheight" type="text" size="10" default="128px" label="IMAGE HEIGHT" description="DESCIMAGEHEIGHT" />
+		<param name="imgspace" type="text" size="10" default="2px" label="IMAGE SPACE" description="DESCIMAGESPACE" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="imgborder" type="radio" default="0" label="IMAGE BORDER" description="DESCIMAGEBORDER">
+			<option value="0">Hide</option> 
+			<option value="1">Show</option> 
+		</param>
+		<param name="imgbordersize" type="text" size="10" default="5px" label="IMAGE BORDER SIZE" description="DESCIMAGEBORDERSIZE" />
+		<param name="imgbordercolor" type="text" size="10" default="#ccc" label="IMAGE BORDER COLOR" description="DESCIMAGEBORDERCOLOR" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="slideshowprofooter" type="radio" default="1" label="SHOW FOOTER" description="DESCSHOWFOOTER">
+			<option value="0">Hide</option> 
+			<option value="1">Show</option> 
+		</param>
+	</params>
+</install>

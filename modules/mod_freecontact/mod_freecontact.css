@@ -1,0 +1,32 @@
+@CHARSET "UTF-8";
+#freecontact {
+
+}
+#freecontact p{
+	margin: 0;
+	padding: 0;
+}
+#freecontact .freecontactText {
+	border: 1px solid #CCCCCC;
+	width: 150px;
+	margin: 3px 0;
+}
+#freecontact .freecontactTextarea {
+	border: 1px solid #CCCCCC;
+	width: 150px;
+	height: 30px;
+	margin: 3px 0;
+}
+#freecontact .freecontactButton {
+	border: 1px solid #CCCCCC;
+	margin: 3px 0;
+}
+#freecontact .invalid {
+	border: 1px solid #FF0000;
+}
+#ampcredit {
+	font-size: 70%;
+}
+#ampcredit0 {
+	display:none;	
+}

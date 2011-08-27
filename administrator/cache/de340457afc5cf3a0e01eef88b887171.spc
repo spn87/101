@@ -1,0 +1,1 @@
+a:3:{s:3:"url";s:48:"http://search.twitter.com/search?q=%23travelbook";s:8:"feed_url";s:53:"http://search.twitter.com/search.atom?q=%23travelbook";s:5:"build";s:14:"20090627192103";}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+<name>Ignite Gallery Plugin v2.7.3</name>
+<author>Matt Thomson</author>
+<creationDate>March 2011</creationDate>
+<copyright>(C) 2010</copyright>
+<authorUrl>www.ignitejoomlaextensions.com</authorUrl>
+<version>2.7.3</version>
+<description></description>
+<files>
+<filename plugin="igallery">igallery.php</filename>
+</files>
+</install>

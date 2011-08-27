@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Plugin in module</name>
+	<author>Mblabs</author>
+	<creationDate>march 2010</creationDate>
+	<copyright>Copyright (C) 2008-2010. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>webmaster@mblabs.net</authorEmail>
+	<authorUrl>www.mblabs.net</authorUrl>
+	<version>1.9.0</version>
+	<description>MODPLUGINMODULE</description>
+	<files>
+		<filename module="mod_plugin_module">mod_plugin_module.php</filename>
+		<filename>index.html</filename>
+                <filename>helper.php</filename>
+                <filename>tmpl/default.php</filename>
+                <filename>tmpl/index.html</filename>
+	</files>
+	<params>
+		<param name="type" type="list" default="1" label="Type of Plugin" description="Select the type of plugin:">
+			<option value="0">{plugin CODE}</option>
+			<option value="1">{plugin}CODE{/plugin}</option>
+		</param>
+		<param name="plugin" type="text" default="" label="Plugin to execute" description="Example: if the plugin is {maps}{/maps} then write maps." />
+		<param name="areadditional" type="radio" default="0" label="Are there additional parameters?" description="Select Yes, if you want display the additional parameters(valid only for {plugin}CODE{/plugin} tipe).">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="additional" type="text" default="" label="Additional Parameters" description="Example: if the plugin is {yootooltip title=[Tooltip Link] width=[250] mode=[cursor]}Tooltip Content{/yootooltip} then write: title=[Tooltip Link] width=[250] mode=[cursor]" />
+		<param name="command" type="text" default="" label="Command to insert" description="Insert the command to execute. Example: if the string is {gallery}fruit{/gallery} then write fruit." />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="advancedbefore" type="text" default="" label="Advanced Text Before Plugin" description="Add additional text to the module or additional command(only HTML mode) before the plugin" />
+		<param name="advancedafter" type="text" default="" label="Advanced Text After Plugin" description="Add additional text to the module or additional command(only HTML mode) after the plugin" />
+	</params>
+</install>

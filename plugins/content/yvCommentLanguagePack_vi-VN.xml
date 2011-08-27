@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/plugin-install.dtd">
+<install type="plugin" group="content" version="1.5.0">
+	<name>yvCommentLanguagePack_vn-VN</name>
+	<creationDate>2009-01-01</creationDate>
+	<author>VnEtips</author>
+	<authorEmail>webmaster@vnetips.com</authorEmail>
+	<authorUrl>http://www.VnEtips.com</authorUrl>
+	<copyright>(c) 2007-2008 VnEtips, http://www.VnEtips.com. All rights reserved.</copyright>
+	<license>GPL</license>
+	<version>1.18.0</version>
+	<description>
+	Vietnamese language Package translated by VnEtips.com.
+	Không Enable Plugin này trong phần Extension/Plugin.
+	Phần backend sẽ được cập nhật sau.
+	</description>
+
+	<files>
+		<filename plugin="yvCommentLanguagePack_vi-VN">yvCommentLanguagePack_vi-VN.php</filename>
+	</files>
+
+	<languages>
+		<language tag="vi-VN">vi-VN.com_yvcomment.ini</language>
+	</languages>
+</install>

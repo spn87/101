@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template" client="site">
+    <name>GreenDreamJ16-TG</name>
+    <version>1.6.0</version>
+    <creationDate>27-03-2011</creationDate>
+    <author>TG</author>
+    <authorEmail>http://www.themegoat.com/contact-us</authorEmail>
+    <authorUrl>http://www.themegoat.com</authorUrl>
+    <copyright>2011</copyright>
+    <license>Creative Commons</license>
+	<description>Joomla 1.6 template</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>params.ini</filename>
+		<filename>component.php</filename>
+		<filename>functions.php</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>html/</folder>
+		<folder>css/</folder>
+		<folder>images/</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>top</position>
+		<position>logo</position>
+		<position>menu</position>
+		<position>right</position>
+		<position>left</position>
+		<position>tguser</position>
+		<position>copyright</position>
+	</positions>
+</extension>

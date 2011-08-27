@@ -1,0 +1,29 @@
+Read this first:
+http://www.themegoat.com/how-to-set-module-positions-in-joomla-1-6
+
+
+*** HOW TO INSTALL THE TEMPLATE:
+
+Make sure you are using Joomla 1.6
+
+Log in to Admin and go to:
+Extensions > Extension Manager > Browse file > Upload and Install template
+
+If it was successful go to:
+Extensions > Module Manager and set the modules to their positions.
+
+ex. If you want the login form on the left site in the Module Manager click on the "Login" link from the list > click on Select Positions > Choose the position "left" or any other position and set the Module Assignment to "On all pages".
+
+The sidebar module positions are called "left" and "right".
+For the position names check the file called templateDetails.xml found in this template folder.
+
+
+*** HOW TO USE THE TEMPLATE:
+This is a free template and you can do what you want with it, as long as you leave the link(s) intact. You can use it on any kind of website (even commercial websites) and you can share it on the internet.
+
+You can modify the image files and css file if you want.
+We do not take credit for any images, icons, effects used in this template.
+
+
+*** HOW TO REMOVE THE CUSTOM MODULE (optional)
+In order to remove the module open the index.php file in your text editor and search for "You can change or remove this". You can make any changes there.

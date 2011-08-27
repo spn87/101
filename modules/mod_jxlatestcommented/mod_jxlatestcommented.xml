@@ -1,0 +1,94 @@
+<?xml version="1.0" ?>
+<install type="module" version="1.5.0">
+    <name>Jx Latest Commented</name>
+    <author>Olle Johansson</author>
+    <version>2.0</version>
+    <creationDate>24 October 2010</creationDate>
+    <copyright>(C) 2006-2010 JX Development</copyright>
+    <license>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html GNU/GPL v2</license>
+    <authorEmail>Olle@Johansson.com</authorEmail>
+    <authorUrl>http://www.jxdevelopment.com/</authorUrl>
+    <description><![CDATA[
+        Show latest commented on items from Joomla! content, Mamblog, Jambook, Jx Directory or Weblinks.
+        Works with Jambook, !JoomlaComment, Jom Comment, OpenComment, AkoComment, Combo, MosCom, Gabrovo and jComments.
+    ]]></description>
+    <files>
+        <filename module="mod_jxlatestcommented">mod_jxlatestcommented.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <params>
+        <param type="spacer" default="&lt;b&gt;Content Settings&lt;/b&gt;" />
+        <param name="contenttype" type="list" default="content" label="Content Type" description="This is what type of items you want to show latest commented items from. (default content)">
+            <option value="content">Content Items</option>
+            <option value="weblinks">Weblinks</option>
+            <option value="mamblog">Mamblog</option>
+            <option value="mxdirectory">Jx Directory</option>
+            <option value="jambook">Jambook</option>
+        </param>
+        <param name="contentsection" type="section" scope="com_content" default="0" label="Content Section" description="A content section to show commented items from." />
+        <param name="excludesection" type="section" scope="com_content" default="0" label="Exclude Section" description="A content section to exclude commented items from." />
+        <param name="orderby" type="list" default="commentdate" label="Order By" description="Order list by this field.">
+            <option value="commentdate">Comment Date</option>
+            <option value="contentdate">Content Date</option>
+            <option value="commentcount">Comment Count</option>
+        </param>
+        <param name="sortdir" type="list" default="DESC" label="Sort Direction" description="Defines whether to sort the list in ascending or descending order.">
+            <option value="ASC">Ascending</option>
+            <option value="DESC">Descending</option>
+        </param>
+        <param name="commentsystem" type="list" default="akocomment" label="Comment System" description="Set this to the comment system you use. (default AkoComment)">
+            <option value="akocomment">AkoComment</option>
+            <option value="moscom">MosCom</option>
+            <option value="combo">Combo MAX</option>
+            <option value="mxcomment">Jx Comments</option>
+            <option value="joomlacomment">!JoomlaComment</option>
+            <option value="jomcomment">Jom Comment</option>
+            <option value="opencomment">OpenComment</option>
+            <option value="gabrovo">Gabrovo</option>
+            <option value="jcomments">jComments</option>
+        </param>
+
+        <param type="spacer" default="&lt;b&gt;Output Settings&lt;/b&gt;" />
+        <param name="count" type="text" default="5" label="Item Count" description="Number of items to show in list (default 5)" />
+        <param name="linktarget" type="text" default="" label="Link Target" description="This will be used as the target for the links. Set to '_blank' to open a new browser window." />
+        <param name="showcomments" type="radio" default="0" label="Show Comment Count" description="Show number of comments next to each item (default no)">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="showdate" type="list" default="0" label="Show Date" description="Show the date when the latest comment was written next to each item? (default no date)">
+            <option value="0">No date</option>
+            <option value="commentdate">Comment Date</option>
+            <option value="contentdate">Content Date</option>
+        </param>
+        <param name="showcomment" type="radio" default="0" label="Show Latest Comment" description="Show the latest comment on each item (default no)">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </param>
+        <param name="commentlength" type="text" default="" label="Comment Length" description="Limit the length of the comment text to this number of letters. (If 0, entire comment will be shown)" />
+    </params>
+
+    <params group="advanced">
+        <param type="spacer" default="&lt;b&gt;Template Settings&lt;/b&gt;" />
+        <param name="preitem" type="text" default="" label="Text Before Item" description="Enter a string that will be shown in front of each item." />
+        <param name="postitem" type="text" default="" label="Text After Item" description="Enter a string that will be shown after each item." />
+        <param name="pretext" type="textarea" default="" rows="3" cols="18" label="Text Above List" description="This text will be shown above the item list." />
+        <param name="posttext" type="textarea" default="" rows="3" cols="18" label="Text Below List" description="This text will be shown below the item list." />
+        <param name="lang_comments" type="text" default="comments" label="Language 'comments'" description="Language string for the text 'comments'" />
+
+        <param type="spacer" default="&lt;b&gt;CSS Settings&lt;/b&gt;" />
+        <param name="cls_div" type="text" default="" label="Div CSS Suffix" description="Suffix added to the CSS class list for the containing DIV element." />
+        <param name="cls_list" type="text" default="" label="List CSS Suffix" description="Suffix added to the CSS class list for the UL element." />
+        <param name="cls_listitem" type="text" default="" label="List Item CSS Suffix" description="Suffix added to the CSS class list for each LI element." />
+        <param name="cls_link" type="text" default="" label="Link CSS Suffix" description="Suffix added to the CSS class list for the A element." />
+        <param name="cls_commentcount" type="text" default="" label="Comment Count CSS Suffix" description="Suffix added the CSS class list for the SPAN element around the comment count." />
+        <param name="cls_date" type="text" default="" label="Date CSS Suffix" description="Suffix added the CSS class list for the SPAN element around the comment count." />
+        <param name="cls_comment" type="text" default="" label="Comment CSS Suffix" description="Suffix added to the CSS class list for the SPAN element around the comment." />
+        <param name="cls_nocommnts" type="text" default="" label="No Comments CSS Suffix" description="Suffix added to the CSS class list for the SPAN element around the text displayed if no commented items were found." />
+    </params>
+    <languages>
+        <language tag="en-GB">language/en-GB/en-GB.mod_jxlatestcommented.ini</language>
+        <language tag="sv-SE">language/sv-SE/sv-SE.mod_jxlatestcommented.ini</language>
+    </languages>
+</install>

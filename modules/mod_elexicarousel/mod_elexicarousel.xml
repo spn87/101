@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>Elexi Carousel</name>
+	<copyright>Copyright (C) 2010 www.ecommercedevelopment.co.in. All Rights Reserved.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<version>1.0.0</version>
+	<creationDate>9/12/2010</creationDate>
+	<author>Dhaval Ramwani</author>
+	<authorEmail>phpapplicationdeveloper@gmail.com</authorEmail>
+	<authorUrl>http://www.ecommercedevelopment.co.in</authorUrl>
+	<description>Elexi Carousel is an extensible carousel/slideshow-like JQuery plugin supporting multiple animation effects.. </description>
+	<files>
+		<folder>assets/</folder>
+        <folder>tmpl/</folder>
+        <filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename module="mod_elexicarousel">mod_elexicarousel.php</filename>
+	</files>
+
+	<params>
+		
+		<param name="imagesDir" type="text" default="images/banners/" label="Images Directory" description="IMAGESDIR DESC" />
+		<param name="speed" type="text" default="1000" label="Speed" description="Rotation Speed" />
+		
+	</params>
+	
+</install>

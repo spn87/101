@@ -1,0 +1,24 @@
+/**
+* YOOslider Joomla! Module
+*
+* @version   1.5.0
+* @author    yootheme.com
+* @copyright Copyright (C) 2007 YOOtheme Ltd. & Co. KG. All rights reserved.
+* @license	 GNU/GPL
+*/
+
+div.yoo-slider { 
+	overflow: hidden;
+	position: relative;
+}
+
+ul.yoo-sliderlist {
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+ 
+ul.yoo-sliderlist .item {
+	display: block;
+	overflow: hidden;
+}

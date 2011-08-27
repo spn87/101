@@ -1,0 +1,62 @@
+/**
+* YOOslider Joomla! Module
+*
+* @version   1.5.0
+* @author    yootheme.com
+* @copyright Copyright (C) 2007 YOOtheme Ltd. & Co. KG. All rights reserved.
+* @license	 GNU/GPL
+*/
+
+div.drawer-v-a ul.yoo-sliderlist .item-bl {
+	background: url(images/item_bl.png) 0 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-bl {
+	background: url(images/item_bl_hover.png) 0 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-br {
+	padding: 0px 10px 0px 10px;
+	background: url(images/item_br.png) 100% 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-br {
+	background: url(images/item_br_hover.png) 100% 100% no-repeat;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-b {
+	padding: 0px 0px 10px 0px;
+	background: url(images/item_b.png) 0 100% repeat-x;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .active .item-b {
+	background: url(images/item_b_hover.png) 0 100% repeat-x;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-l {
+	margin: 0px -10px 0px -10px;
+	background: url(images/item_l.png) 0 0 repeat-y;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .item-r {
+	padding: 0px 2px 0px 2px;
+	background: url(images/item_r.png) 100% 0 repeat-y;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .article {
+	background: url(images/item_bg.png) 0 100% repeat-x;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .article h3 {
+	padding-bottom: 0px;
+	margin-bottom: 5px;
+	line-height: 100%;
+	font-size: 150%;
+	font-weight: bold;
+	color: #323232;
+}
+
+div.drawer-v-a ul.yoo-sliderlist .article {
+	font-size: 95%;
+	line-height: 125%;
+}

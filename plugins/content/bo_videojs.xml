@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - bo:VideoJS</name>
+	<author>Alfred Bösch</author>
+	<creationDate>Dezember 2010</creationDate>
+	<copyright>(C) 2010 Alfred Bösch. Alle Rechte vorbehalten.</copyright>
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<authorEmail>support@boeschung.de</authorEmail>
+	<authorUrl>http://www.boeschung.de</authorUrl>
+	<version>1.4.0</version>
+	<description>PLUGIN DESC</description>
+	<files>
+		<filename plugin="bo_videojs">bo_videojs.php</filename>
+		<folder>bo_videojs</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB.plg_content_bo_videojs.ini</language>
+	</languages>
+	<params>
+		<param name="@spacer" type="spacer" default="DEFAULT VIDEO PARAMETER" label="" description="" />
+		<param name="video_mp4" type="text" default="http://video-js.zencoder.com/oceans-clip.mp4" label="LABEL VIDEO MP4" description="DESC VIDEO MP4" size="40" />
+		<param name="video_webm" type="text" default="http://video-js.zencoder.com/oceans-clip.webm" label="LABEL VIDEO WEBM" description="DESC VIDEO WEBM" size="40" />
+		<param name="video_ogg" type="text" default="http://video-js.zencoder.com/oceans-clip.ogv" label="LABEL VIDEO OGG" description="DESC VIDEO OGG" size="40" />
+		<param name="flash" type="text" default="http://video-js.zencoder.com/oceans-clip.mp4" label="LABEL FLASH" description="DESC FLASH" size="40" />
+		<param name="image" type="text" default="http://video-js.zencoder.com/oceans-clip.png" label="LABEL IMAGE" description="DESC IMAGE" size="40" />
+		<param name="@spacer" type="spacer" default="DEFAULT PLAYER PARAMETER" label="" description="" />
+		<param name="width" type="text" default="640" label="LABEL WIDTH" description="DESC WIDTH" size="3" />
+		<param name="height" type="text" default="264" label="LABEL HEIGHT" description="DESC HEIGHT" size="3" />
+		<param name="skin" type="list" default="default" label="LABEL SKIN" description="DESC SKIN">
+			<option value="default">default</option>
+			<option value="hu">hu</option>
+			<option value="tube">tube</option>
+			<option value="vim">vim</option>
+		</param>
+		<param name="autoplay" type="radio" default="0" label="LABEL AUTOPLAY" description="DESC AUTOPLAY">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="preload" type="radio" default="1" label="LABEL PRELOAD" description="DESC PRELOAD">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="loop" type="radio" default="0" label="LABEL LOOP" description="DESC LOOP">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="controlsBelow" type="radio" default="0" label="LABEL CONTROLS BELOW" description="DESC CONTROLS BELOW">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="controlsAtStart" type="radio" default="0" label="LABEL CONTROLS AT START" description="DESC CONTROLS AT START">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="controlsHiding" type="radio" default="1" label="LABEL CONTROLS HIDING" description="DESC CONTROLS HIDING">
+			<option value="0">off</option>
+			<option value="1">on</option>
+		</param>
+		<param name="defaultVolume" type="text" default="0.85" label="LABEL DEFAULT VOLUME" description="DESC DEFAULT VOLUME" size="3" />
+		<param name="playerFallbackOrder" type="list" default="html5, flash, links" label="LABEL PLAYER FALLBACK ORDER" description="DESC PLAYER FALLBACK ORDER">
+			<option value="'html5', 'flash', 'links'">html5, flash, links</option>
+			<option value="'html5', 'links', 'flash'">html5, links, flash</option>
+			<option value="'flash', 'html5', 'links'">flash, html5, links</option>
+		</param>
+		<param name="wmode" type="list" default="default" label="LABEL WMODE" description="DESC WMODE">
+			<option value="default">default</option>
+			<option value="opaque">opaque</option>
+			<option value="transparent">transparent</option>
+		</param>
+		<param name="flashPlayerVersion" type="text" default="9" label="LABEL FLASH PLAYER VERSION" description="DESC FLASH PLAYER VERSION" size="3" />
+	</params>
+</install>

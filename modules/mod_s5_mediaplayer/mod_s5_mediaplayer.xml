@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+	<name>S5 Media Player</name>
+	<author>Shape5.com</author>
+	<creationDate>May 2009</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>contact@shape5.com</authorEmail>
+	<authorUrl>www.shape5.com</authorUrl>
+	<version>1.0.0</version>
+	<description>This module will play FLV and MP4 media files.  Up to 30 files can be added at one time in the player.</description>
+	<files>
+			<filename module="mod_s5_mediaplayer">mod_s5_mediaplayer.php</filename>
+				<filename>videoPlayer.swf</filename>
+				<filename>videoPlayerLight.swf</filename>
+				<filename>library/script.js</filename>
+
+	</files>
+	<params>
+                <param name="pretext" type="textarea" cols="40" rows="5" default="" label="Pre-Text" description="Enter any pre-text message." />
+				<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+               
+
+                <param name="height" type="text" default="300" label="Height" description="Enter the height in pixels of tthe media player." />
+     		    <param name="width" type="text" default="630" label="Width" description="Enter the width of the media player" />
+				<param name="mpbgcolor" type="text" default="000000" label="Background Color" description="Choose background color" />
+				
+				<param name="lightdark" type="list" default="dark" label="Media Player Theme" description="Choose between dark and light theme to match the style of site you are running">
+					<option value="dark">Dark Theme</option>
+					<option value="light">Light Theme</option>
+				</param>
+				
+				
+                <param name="" type="spacer" default="You may enter up to 30 Videos. If you do not wish to use 30 videos leave the extra fields blank." label="Note:" description="" />
+              
+				<param name="" type="spacer" default="Video 1 -----------------------------------" label="Video 1" description="" />
+			  
+				<param name="s5mp_ratio1" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name1" type="text" default="" label="Video 1 Title" description="Enter the video 1 title here" />
+				<param name="s5mp_description1" type="textarea" cols="40" rows="5" default="" label="Video 1 Description" description="Enter the video 1 description here." />
+				<param name="s5mp_movie1" type="text" default="" label="Video 1 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon1" type="text" default="" label="Video 1 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          
+				<param name="" type="spacer" default="Video 2 -----------------------------------" label="Video 2" description="" />
+			  
+				<param name="s5mp_ratio2" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name2" type="text" default="" label="Video 2 Title" description="Enter the video 2 title here" />
+				<param name="s5mp_description2" type="textarea" cols="40" rows="5" default="" label="Video 2 Description" description="Enter the video 2 description here." />
+				<param name="s5mp_movie2" type="text" default="" label="Video 2 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon2" type="text" default="" label="Video 2 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          			
+			
+				<param name="" type="spacer" default="Video 3 -----------------------------------" label="Video 3" description="" />
+			  
+				<param name="s5mp_ratio3" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name3" type="text" default="" label="Video 3 Title" description="Enter the video 3 title here" />
+				<param name="s5mp_description3" type="textarea" cols="40" rows="5" default="" label="Video 3 Description" description="Enter the video 3 description here." />
+				<param name="s5mp_movie3" type="text" default="" label="Video 3 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon3" type="text" default="" label="Video 3 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 4 -----------------------------------" label="Video 4" description="" />
+			  
+				<param name="s5mp_ratio4" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name4" type="text" default="" label="Video 4 Title" description="Enter the video 4 title here" />
+				<param name="s5mp_description4" type="textarea" cols="40" rows="5" default="" label="Video 4 Description" description="Enter the video 4 description here." />
+				<param name="s5mp_movie4" type="text" default="" label="Video 4 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon4" type="text" default="" label="Video 4 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 5 -----------------------------------" label="Video 5" description="" />
+			  
+				<param name="s5mp_ratio5" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name5" type="text" default="" label="Video 5 Title" description="Enter the video 5 title here" />
+				<param name="s5mp_description5" type="textarea" cols="40" rows="5" default="" label="Video 5 Description" description="Enter the video 5 description here." />
+				<param name="s5mp_movie5" type="text" default="" label="Video 5 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon5" type="text" default="" label="Video 5 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 6 -----------------------------------" label="Video 6" description="" />
+			  
+				<param name="s5mp_ratio6" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name6" type="text" default="" label="Video 6 Title" description="Enter the video 6 title here" />
+				<param name="s5mp_description6" type="textarea" cols="40" rows="5" default="" label="Video 6 Description" description="Enter the video 6 description here." />
+				<param name="s5mp_movie6" type="text" default="" label="Video 6 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon6" type="text" default="" label="Video 6 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 7 -----------------------------------" label="Video 7" description="" />
+			  
+				<param name="s5mp_ratio7" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name7" type="text" default="" label="Video 7 Title" description="Enter the video 7 title here" />
+				<param name="s5mp_description7" type="textarea" cols="40" rows="5" default="" label="Video 7 Description" description="Enter the video 7 description here." />
+				<param name="s5mp_movie7" type="text" default="" label="Video 7 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon7" type="text" default="" label="Video 7 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 8 -----------------------------------" label="Video 8" description="" />
+			  
+				<param name="s5mp_ratio8" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name8" type="text" default="" label="Video 8 Title" description="Enter the video 8 title here" />
+				<param name="s5mp_description8" type="textarea" cols="40" rows="5" default="" label="Video 8 Description" description="Enter the video 8 description here." />
+				<param name="s5mp_movie8" type="text" default="" label="Video 8 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon8" type="text" default="" label="Video 8 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 9 -----------------------------------" label="Video 9" description="" />
+			  
+				<param name="s5mp_ratio9" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name9" type="text" default="" label="Video 9 Title" description="Enter the video 9 title here" />
+				<param name="s5mp_description9" type="textarea" cols="40" rows="5" default="" label="Video 9 Description" description="Enter the video 9 description here." />
+				<param name="s5mp_movie9" type="text" default="" label="Video 9 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon9" type="text" default="" label="Video 9 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 10 -----------------------------------" label="Video 10" description="" />
+			  
+				<param name="s5mp_ratio10" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name10" type="text" default="" label="Video 10 Title" description="Enter the video 10 title here" />
+				<param name="s5mp_description10" type="textarea" cols="40" rows="5" default="" label="Video 10 Description" description="Enter the video 10 description here." />
+				<param name="s5mp_movie10" type="text" default="" label="Video 10 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon10" type="text" default="" label="Video 10 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 11 -----------------------------------" label="Video 11" description="" />
+			  
+				<param name="s5mp_ratio11" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name11" type="text" default="" label="Video 11 Title" description="Enter the video 11 title here" />
+				<param name="s5mp_description11" type="textarea" cols="40" rows="5" default="" label="Video 11 Description" description="Enter the video 11 description here." />
+				<param name="s5mp_movie11" type="text" default="" label="Video 11 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon11" type="text" default="" label="Video 11 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 12 -----------------------------------" label="Video 12" description="" />
+			  
+				<param name="s5mp_ratio12" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name12" type="text" default="" label="Video 12 Title" description="Enter the video 12 title here" />
+				<param name="s5mp_description12" type="textarea" cols="40" rows="5" default="" label="Video 12 Description" description="Enter the video 12 description here." />
+				<param name="s5mp_movie12" type="text" default="" label="Video 12 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon12" type="text" default="" label="Video 12 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 13 -----------------------------------" label="Video 13" description="" />
+			  
+				<param name="s5mp_ratio13" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name13" type="text" default="" label="Video 13 Title" description="Enter the video 13 title here" />
+				<param name="s5mp_description13" type="textarea" cols="40" rows="5" default="" label="Video 13 Description" description="Enter the video 13 description here." />
+				<param name="s5mp_movie13" type="text" default="" label="Video 13 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon13" type="text" default="" label="Video 13 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 14 -----------------------------------" label="Video 14" description="" />
+			  
+				<param name="s5mp_ratio14" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name14" type="text" default="" label="Video 14 Title" description="Enter the video 14 title here" />
+				<param name="s5mp_description14" type="textarea" cols="40" rows="5" default="" label="Video 14 Description" description="Enter the video 14 description here." />
+				<param name="s5mp_movie14" type="text" default="" label="Video 14 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon14" type="text" default="" label="Video 14 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+	
+				<param name="" type="spacer" default="Video 15 -----------------------------------" label="Video 15" description="" />
+			  
+				<param name="s5mp_ratio15" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name15" type="text" default="" label="Video 15 Title" description="Enter the video 15 title here" />
+				<param name="s5mp_description15" type="textarea" cols="40" rows="5" default="" label="Video 15 Description" description="Enter the video 15 description here." />
+				<param name="s5mp_movie15" type="text" default="" label="Video 15 URL" description="Enter the URL for your SWF or MP4 file here" />
+				<param name="s5mp_icon15" type="text" default="" label="Video 15 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 16 -----------------------------------" label="Video 16" description="" />
+			  
+				<param name="s5mp_ratio16" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name16" type="text" default="" label="Video 16 Title" description="Enter the video 16 title here" />
+				<param name="s5mp_description16" type="textarea" cols="40" rows="5" default="" label="Video 16 Description" description="Enter the video 16 description here." />
+				<param name="s5mp_movie16" type="text" default="" label="Video 16 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon16" type="text" default="" label="Video 16 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 17 -----------------------------------" label="Video 17" description="" />
+			  
+				<param name="s5mp_ratio17" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name17" type="text" default="" label="Video 17 Title" description="Enter the video 17 title here" />
+				<param name="s5mp_description17" type="textarea" cols="40" rows="5" default="" label="Video 17 Description" description="Enter the video 17 description here." />
+				<param name="s5mp_movie17" type="text" default="" label="Video 17 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon17" type="text" default="" label="Video 17 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 18 -----------------------------------" label="Video 18" description="" />
+			  
+				<param name="s5mp_ratio18" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name18" type="text" default="" label="Video 18 Title" description="Enter the video 18 title here" />
+				<param name="s5mp_description18" type="textarea" cols="40" rows="5" default="" label="Video 18 Description" description="Enter the video 18 description here." />
+				<param name="s5mp_movie18" type="text" default="" label="Video 18 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon18" type="text" default="" label="Video 18 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 19 -----------------------------------" label="Video 19" description="" />
+			  
+				<param name="s5mp_ratio19" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name19" type="text" default="" label="Video 19 Title" description="Enter the video 19 title here" />
+				<param name="s5mp_description19" type="textarea" cols="40" rows="5" default="" label="Video 19 Description" description="Enter the video 19 description here." />
+				<param name="s5mp_movie19" type="text" default="" label="Video 19 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon19" type="text" default="" label="Video 19 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 20 -----------------------------------" label="Video 20" description="" />
+			  
+				<param name="s5mp_ratio20" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name20" type="text" default="" label="Video 20 Title" description="Enter the video 20 title here" />
+				<param name="s5mp_description20" type="textarea" cols="40" rows="5" default="" label="Video 20 Description" description="Enter the video 20 description here." />
+				<param name="s5mp_movie20" type="text" default="" label="Video 20 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon20" type="text" default="" label="Video 20 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 21 -----------------------------------" label="Video 21" description="" />
+			  
+				<param name="s5mp_ratio21" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name21" type="text" default="" label="Video 21 Title" description="Enter the video 21 title here" />
+				<param name="s5mp_description21" type="textarea" cols="40" rows="5" default="" label="Video 21 Description" description="Enter the video 21 description here." />
+				<param name="s5mp_movie21" type="text" default="" label="Video 21 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon21" type="text" default="" label="Video 21 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	          	
+				<param name="" type="spacer" default="Video 22 -----------------------------------" label="Video 22" description="" />
+			  
+				<param name="s5mp_ratio22" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name22" type="text" default="" label="Video 22 Title" description="Enter the video 22 title here" />
+				<param name="s5mp_description22" type="textarea" cols="40" rows="5" default="" label="Video 22 Description" description="Enter the video 22 description here." />
+				<param name="s5mp_movie22" type="text" default="" label="Video 22 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon22" type="text" default="" label="Video 22 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 23 -----------------------------------" label="Video 23" description="" />
+			  
+				<param name="s5mp_ratio23" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name23" type="text" default="" label="Video 23 Title" description="Enter the video 23 title here" />
+				<param name="s5mp_description23" type="textarea" cols="40" rows="5" default="" label="Video 23 Description" description="Enter the video 23 description here." />
+				<param name="s5mp_movie23" type="text" default="" label="Video 23 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon23" type="text" default="" label="Video 23 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 24 -----------------------------------" label="Video 24" description="" />
+			  
+				<param name="s5mp_ratio24" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name24" type="text" default="" label="Video 24 Title" description="Enter the video 24 title here" />
+				<param name="s5mp_description24" type="textarea" cols="40" rows="5" default="" label="Video 24 Description" description="Enter the video 24 description here." />
+				<param name="s5mp_movie24" type="text" default="" label="Video 24 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon24" type="text" default="" label="Video 24 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 25 -----------------------------------" label="Video 25" description="" />
+			  
+				<param name="s5mp_ratio25" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name25" type="text" default="" label="Video 25 Title" description="Enter the video 25 title here" />
+				<param name="s5mp_description25" type="textarea" cols="40" rows="5" default="" label="Video 25 Description" description="Enter the video 25 description here." />
+				<param name="s5mp_movie25" type="text" default="" label="Video 25 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon25" type="text" default="" label="Video 25 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+	
+				<param name="" type="spacer" default="Video 26 -----------------------------------" label="Video 26" description="" />
+			  
+				<param name="s5mp_ratio26" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name26" type="text" default="" label="Video 26 Title" description="Enter the video 26 title here" />
+				<param name="s5mp_description26" type="textarea" cols="40" rows="5" default="" label="Video 26 Description" description="Enter the video 26 description here." />
+				<param name="s5mp_movie26" type="text" default="" label="Video 26 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon26" type="text" default="" label="Video 26 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 27 -----------------------------------" label="Video 27" description="" />
+			  
+				<param name="s5mp_ratio27" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name27" type="text" default="" label="Video 27 Title" description="Enter the video 27 title here" />
+				<param name="s5mp_description27" type="textarea" cols="40" rows="5" default="" label="Video 27 Description" description="Enter the video 27 description here." />
+				<param name="s5mp_movie27" type="text" default="" label="Video 27 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon27" type="text" default="" label="Video 27 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 28 -----------------------------------" label="Video 28" description="" />
+			  
+				<param name="s5mp_ratio28" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name28" type="text" default="" label="Video 28 Title" description="Enter the video 28 title here" />
+				<param name="s5mp_description28" type="textarea" cols="40" rows="5" default="" label="Video 28 Description" description="Enter the video 28 description here." />
+				<param name="s5mp_movie28" type="text" default="" label="Video 28 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon28" type="text" default="" label="Video 28 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 29 -----------------------------------" label="Video 29" description="" />
+			  
+				<param name="s5mp_ratio29" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name29" type="text" default="" label="Video 29 Title" description="Enter the video 29 title here" />
+				<param name="s5mp_description29" type="textarea" cols="40" rows="5" default="" label="Video 29 Description" description="Enter the video 29 description here." />
+				<param name="s5mp_movie29" type="text" default="" label="Video 29 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon29" type="text" default="" label="Video 29 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+		
+				<param name="" type="spacer" default="Video 30 -----------------------------------" label="Video 30" description="" />
+			  
+				<param name="s5mp_ratio30" type="text" default="" label="Enter 16:9, 4:3, etc" description="Enter 16:9, 4:3, etc" />
+                <param name="s5mp_name30" type="text" default="" label="Video 30 Title" description="Enter the video 30 title here" />
+				<param name="s5mp_description30" type="textarea" cols="40" rows="5" default="" label="Video 30 Description" description="Enter the video 30 description here." />
+				<param name="s5mp_movie30" type="text" default="" label="Video 30 URL" description="Enter the URL for your SWF or MP4 file here" />	
+				<param name="s5mp_icon30" type="text" default="" label="Video 30 Icon" description="Enter the URL for the JPG, GIF, PNG, etc that you would like for a thumbnail" />  		
+	
+	
+	</params>
+</install>

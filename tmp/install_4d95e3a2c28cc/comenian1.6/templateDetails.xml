@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="1.6" type="template">
+	<name>Comenian1.6</name>
+	<creationDate>Mars/11</creationDate>
+	<author>globbers</author>
+	<authorEmail>globbers@hotmail.fr</authorEmail>
+	<authorUrl>http://www.globbersthemes.com</authorUrl>
+	<version>1.6</version>
+	<description>
+	<![CDATA[<h1>Comenian Free Template </h1>
+
+			<span style="font-size: 15px;font-weight:bold;">
+			Comenian template is a free template ,design by globbers.
+			<span style="color:red; font-weight: bold; ">!Not for commercial!!! for commercial use, you must pay a special license (5 EURO) .</span> <br />			
+			<br />Visit globbersthemes: <a href="http://adf.ly/9T0U" target="_blank">http://www.globbersthemes.com</a>.<br />
+			</span>
+			<hr />
+			<h3><b>OTHER FREE TEMPLATES </b></h3>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/lFkA" target="_blank"><b>template comenian1.6</a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/f1CU" target="_blank"><b>template foregges</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/aLAI" target="_blank"><b>template stylusson</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/XHNW" target="_blank"><b>template qualister</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/TgBU" target="_blank"><b>template hoefgiles</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/SDd5" target="_blank"><b>template edelman</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/O1zh" target="_blank"><b>template comenian</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/Kozh" target="_blank"><b>template boowne</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/I3IW" target="_blank"><b>template cartion</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/FlE1" target="_blank"><b>template naturalis2</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/FCKK" target="_blank"><b>template morit</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/E8vm" target="_blank"><b>template platine45</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/DphR" target="_blank"><b>template antesate</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/Dpgf" target="_blank"><b>template brander</b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/CDmT" target="_blank"><b>template larrens2</b></a>.</span>
+                <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/C2gR" target="_blank"><b>template profile </b></a>.</span><br />
+                <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/Bf1m" target="_blank"><b>template story of glory </b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/AxE0" target="_blank"><b>template limpidum </b></a>.</span><br />
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/ARIc" target="_blank"><b>template asturias</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9vSf" target="_blank"><b>template vanenborg</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9TZW" target="_blank"><b>template cerniqua</b></a>.</span>
+			    <span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9TaH" target="_blank"><b>template blogana</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9Tam" target="_blank"><b>template addaman</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9TcU" target="_blank"><b>template via-granitti</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9Tbv" target="_blank"><b>template upsilum</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9Te6" target="_blank"><b>template marhance</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9Tf9" target="_blank"><b>template everhest</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9uwn" target="_blank"><b>template larrens</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9uxw" target="_blank"><b>template naturalis</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9uyO" target="_blank"><b>template dolmatia</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9uzO" target="_blank"><b>template slumbyn</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v0B" target="_blank"><b>template barbarican</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v1E" target="_blank"><b>template baakminster</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v1n" target="_blank"><b>template antesate</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v2X" target="_blank"><b>template dupliscity</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v34" target="_blank"><b>template maillers</b></a>.</span><br />
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v3x" target="_blank"><b>template notebook</b></a>.</span>
+				<span style="margin-right:10px;font-size:15px;"><a href="http://adf.ly/9v4b" target="_blank"><b>template archesoft</b></a>.</span><br />
+				
+				
+			<br /><br />]]>
+	
+	</description>
+	<files>
+	    <folder>images</folder>
+	    <folder>css</folder>
+	    <folder>js</folder>
+		<folder>html</folder>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+	</files>
+		
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>position-0</position>
+		<position>position-1</position>
+		<position>position-2</position>
+		<position>position-3</position>
+		<position>position-4</position>
+		<position>position-5</position>
+		<position>position-6</position>
+		<position>position-7</position>
+		<position>position-8</position>
+		<position>position-9</position>
+		<position>position-10</position>
+		<position>position-11</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+		<position>login</position>
+		
+	</positions>
+	    <config>
+	    <fields name="params" >
+	    <fieldset name="advanced">
+		<field type="spacer" />
+		<field name="pause" type="text" default="5" label="pause transition" size="10" description="enter a number"/>
+		<field name="fadespeed" type="text" default="0.5" label="fadespeed" size="10" description="enter a number"/>
+		<field name="largeur" type="text" default="950" label="width image" size="10" description="enter a number"/>
+		<field name="hauteur" type="text" default="469" label="height image" size="10" description="enter a number"/>
+	    </fieldset>
+	    </fields>
+	</config>
+	
+</extension>

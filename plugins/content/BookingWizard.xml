@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Booking Wizard</name>
+	<author>Bellside Designs</author>
+	<creationDate>Nov 2009</creationDate>
+	<copyright>(C) www.bellsidedesigns.co.uk All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>chuckpettigrew@bellsidedesigns.co.uk</authorEmail>
+	<authorUrl>www.bookingwizard.net</authorUrl>
+	<version>1.3</version>
+	<description>
+		This plugin displays third party widgets for an online booking wizard and availability system.
+		To get a demo up and running, keep account ID as demoAccount and add the test entries opposite into your content material.
+	</description>
+
+	<files>
+		<filename plugin="BookingWizard">BookingWizard.php</filename>
+	</files>
+	<params>
+
+
+		<param name="booking_language" type="text" default="en" size="3" label="Language" description="Language for the widgets if not autodetected" />
+
+		<param name="use_page_language" type="radio" default="1" label="Autodetect language" description="Try to detect site/page language-context">
+		  	<option value="0">No</option>
+            <option value="1">Yes</option>
+		</param>
+
+		<param name="account" type="text" default="demoAccount" size="18" label="Account ID" description="Enter your account ID here (use demoAccount for testing" />
+
+		<param name="layout" type="radio" default="classic" label="Booking Layout" description="Choose different layout options (For booking calendars only)">
+			<option value="classic">Classic</option>
+			<option value="banner">Banner</option>
+			<option value="tower">Tower</option>
+		</param>
+
+		<param name="classid" type="text" default="booking" size="18" label="The class stylename prefix for the div which will surround the Widgets" description="Used for positioning the widgets" />
+
+		<param name="debug" type="radio" default="1" label="Debug, insert frame borders" description="See exactly the frame size taken by the widgets (set No for production)">
+		  	<option value="0">No</option>
+            <option value="1">Yes</option>
+		</param>
+
+		<param name="testInstruct" type="text" default="{booking property,Portal}" label="Test entry, Property_widget" size="30" description="{booking property,Portal}" />
+		<param name="availability" type="text" default="{booking availability}" label="Test entry, Availability_widget:" size="30" description="{booking availability}" />
+		<param name="administration" type="text" default="{booking administration}" label="Test entry, Administration_widget:" size="30" description="{booking administration}" />
+
+	</params>
+</install>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metafile version="1.5"  client="administrator" >
+	<tag>km-KH</tag>
+	<name>Khmer (Cambodia)</name>
+	<description>Khmer language administrator for Joomla</description>
+	<version>1.5.20</version>
+	<creationDate>2010-07-18</creationDate>
+	<author>KM-KH.COM</author>
+	<authorUrl>www.km-kh.com</authorUrl>
+	<authorEmail>khmerlocalization@gmail.com</authorEmail>
+	<copyright>2009 - 2010 Joomla! Khmer (Cambodia) Translation Team</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<metadata>
+		<name>Khmer (Cambodia)</name>
+		<tag>km-KH</tag>
+		<rtl>0</rtl>
+		<locale>km_KH.utf8, km_KH.UTF-8, km_KH, khm_KH, km, khmer, khmer-kh, kh, cam, cambodia</locale>
+		<winCodePage>utf-8</winCodePage>
+		<backwardLang>khmer</backwardLang>
+		<pdfFontName>khmeros</pdfFontName>
+	</metadata>
+	<params></params>
+</metafile>

@@ -1,0 +1,14 @@
+
+.cofiVernissageImage {
+    background: #FFFFFF;
+    padding: 2px;
+    border: 1px solid #DDDDDD;
+    margin: 2px 2px 2px 2px;
+}
+
+.cofiVernissagePoweredByText {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: #777777;
+    font-size: 9px;
+}

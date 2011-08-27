@@ -1,0 +1,66 @@
+/* CSS style - Core Design Lock Article plugin for Joomla! 1.5 */
+
+/* Button panel */
+div.lockarticle {
+	padding: 0;
+	margin: 10px 5px;
+}
+
+/* Button style */
+div.lockarticle button {
+	margin: 4px;
+	padding: 3px;
+}
+
+/* Lock Article box style */
+div.lockarticle_box {
+	margin: 15px auto;
+	width: 80%;
+}
+
+/* Inner box form */
+div.lockarticle_box form {
+	/* empty */
+}
+
+div.lockarticle_box form div.headertext {
+	margin: 0;
+	padding: 0;
+}
+
+/* Inner box  input */
+div.lockarticle_box form input {
+	border: 3px double #a9a9a9;
+	width: 150px;
+	padding: 1px;
+	margin: 0;
+	color: gray;
+	background: transparent;
+	float: left;
+}
+
+/* Input focused, hover - IE styling */
+div.lockarticle_box form input:focus, div.lockarticle_box form input:hover {
+	border: 3px double gray;
+	cursor: text;
+	outline: none;
+}
+
+div.lockarticle_box form div.spacer {
+	margin: 8px 0px 3px 0px;
+	padding: 0;
+}
+
+div.lockarticle_box form div.clr {
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+div.lockarticle_box form div.loading {
+	background: transparent url(../images/loading.gif) 0 0 no-repeat;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 4px;
+}

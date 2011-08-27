@@ -1,0 +1,81 @@
+mod_ExtCoppermine - module for integrating Coppermine gallery into Joomla
+-------------------------------------------------------------------------
+
+[1.5.1]
+
+[CODE]		Fix to prevent unnessary load of highslide script and css if not wanted
+[CODE]		Improved error handling if cpmFetch folder and configuratiob file not found
+[CODE]		Improved error handling if highslide script has not been found
+
+[1.5.0]
+[CODE}		All fixes and improvements are related to Highslide
+[CODE]		Fix to make it SEF compatible - therefore Upgrade mandatory if using SEF
+[CODE]		changed the parameter for the path to Highslide - can be now choice of a local path under the joomla folder - standard should be "highslide" or URL to highlide - when updating from versions before 1.5.0 the path to Highlside at the Backend does not work anymore. You have to change it manually
+[CODE]		Block right Click on the Popup images not working fixed
+[CODE}		Added options to center the popups
+[CODE]		Improvements  - using J1.5 standard API routines
+[TEST]		Tested successfully with joomla 1.5.8 and coppermine bridge and cpg 1.4.19 and highslide 4.0.10
+
+
+[1.4.0]
+[CODE]		Moved Highslide options to advanced parameters
+[CODE]		Added further parameters for highslide - Caption control, dimming like the lightbox effect, several outline effects, credit link
+[CODE]		Added options for opening the medium sized pictures for highslide
+[TEST]		known issue: strange effect for longer captions in connection with highslide
+[TEST]		Tested successfully with coppermine 1.4.16, joomla 1.5
+[TEST]		this version is only for joomla 1.5 native - changes has been done only to highslide support
+
+v1.3.1
+[CODE]		XML Fix which prevents successful installing of the module
+
+v1.3.0
+[CODE]		NEW VERSIONS for joomla 1.0 and 1.5
+[CODE]		cleanup code
+[CODE]		added options to use the Highslide script for eyecatching effects
+[CODE]		added options for displaying no images
+[CODE]		added options for displaying subtitles as link
+[CODE]		added options to link to the category - not only album, picture and none
+[CODE]		fixed bug with Internet Explorer not resizing thumbnails correctly
+[TEST]		Tested successfully with joomla 1.0.15, coppermine 1.4.16, joomla 1.5
+
+
+v1.2.0
+[CODE]		Added new option for predefined CSS styles. Easy to customize and no hassle to add the same css parameters again and again
+[CODE]		Use of external css file for the module - to find under modules/mod_extcoppermine/css/mod_extcoppermine.css
+[CODE]		Enhanched description for different parameters at the backend - read the toolboxes on mouseover
+[CODE]		Better description for parameter for the path to cpmFetch - relative path can be used
+[TEST]		All used css classes for the module should be moved from the template css file to the new css mod_extcoppermine.css file
+[TEST]		Tested successfully with Joomla 1.0.13 and Coppermine Gallery 1.4.13
+
+
+v1.1.1
+[CODE]		Added option to show pictures from nonpublic albums
+[TEST]		Tested successfully to fetch from different Coppermine galleries via different cpmFetch config files at the same page - the name of the config file can be changed at the backend
+
+v1.1.0
+[CODE]		Choice of Simple or Advanced mode
+[CODE]		Added possibility to show just a single picture
+[CODE]		Added further functionality for source selection of pictures --> from 1. album 2. category 3. album and category
+
+[CODE]		Added option to filter for keywords, title and description
+[CODE]		Added option to filter for specific owner
+[CODE]		Added option to show last commented pictures - this option is not filtered by the source selection - it shows the comments from all albums/categories
+[CODE]		Added possiblity to enter a name for the config file
+[CODE]		Renamed the module-name to mod_extcoppermine
+[TEST]		tested with cpmFetch 2.0.0 - it works fine !
+
+v1.0.1
+[CODE]		Fixed broken links to the cpmFetch author website is now: http://cpmfetch.fistfullofcode.com/index.php
+[CODE]		customized description for better understanding
+[CODE]		added changelog.txt
+[TEST]		Tested on my own website from cpmFetch Version 1.9.08 until the latest 1.9.12 and it works fine !
+
+v1.0.0		First release
+
+Questions requests donations please make to
+
+Webmaster and Traveller - André Diez
+at www.Der-Reisende.de
+via Mail: info@der-reisende.de
+or  Private message for registered users
+or  Supportforum - http://www.der-reisende.de/cms/component/option,com_fireboard/Itemid,137/

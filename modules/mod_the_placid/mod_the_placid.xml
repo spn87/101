@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install type="module" version="1.5.0" method="upgrade">
+    <name>The Placid</name>
+    <author>Neerav Dobaria</author>
+    <creationDate>September 2010</creationDate>
+    <copyright>Released under GNU/GPL License</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0-standalone.html</license>
+    <authorEmail>dobaria.neerav@gmail.com</authorEmail>
+    <authorUrl>http://www.vareen.co.cc/</authorUrl>
+    <version>1.0</version>
+    <description>SIMPLE FLASH FADE IN FADE OUT SLIDESHOW</description>
+    <files>
+        <filename module="mod_the_placid">mod_the_placid.php</filename>
+        <file>preview.swf</file>
+		<folder>banner</folder>
+		<folder>js</folder>
+		<folder>elements</folder>
+    </files>
+
+    <params addpath="/modules/mod_the_placid/elements/">
+        <param name="cache" type="radio" default="0" label="Reset Cache" description="REBUILD CACHE" >
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+        <param name="path" type="textarea" default="modules/mod_the_placid/banner/content/images/image1.jpg&lt;br /&gt;modules/mod_the_placid/banner/content/images/image2.jpg&lt;br /&gt;modules/mod_the_placid/banner/content/images/image3.jpg&lt;br /&gt;modules/mod_the_placid/banner/content/images/image4.jpg&lt;br /&gt;modules/mod_the_placid/banner/content/images/image5.jpg" label="Image URL" description="ENTER URL OF IMAGES" cols="60" rows="5" />
+        <param name="link" type="textarea" default="" label="Link" description="ENTER LINK OF IMAGE" cols="60" rows="5" />
+        <param name="target" type="textarea" default="" label="Link Target" description="ENTER TARGET OF LINK" cols="60" rows="5" />
+        <param name="transitionTime" type="textarea" default="1&lt;br /&gt;1&lt;br /&gt;1&lt;br /&gt;1&lt;br /&gt;1" label="Transition Time" description="ENTER TRANSITION TIME" cols="60" rows="5" />
+        <param name="slideShowTime" type="textarea" default="3&lt;br /&gt;3&lt;br /&gt;3&lt;br /&gt;3&lt;br /&gt;3" label="Slideshow Time" description="ENTER SLIDESHOW TIME" cols="60" rows="5" />
+    </params>
+
+	<params  group="advanced">
+        <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+        <param name="width" type="text" default="560" label="Width" description="ENTER WIDTH" />
+        <param name="height" type="text" default="374" label="Height" description="ENTER HEIGHT" />
+        <param name="startWith" type="text" default="1" label="Start With" description="ENTER START WITH" />
+        <param name="backgroundColor" type="cp" default="#ffffff" label="Background color" description="SELECT BACKGROUND COLOR" />
+        <param name="backgroundTransparency" type="text" default="100" label="Background Transparency" description="ENTER BACKGROUND TRANSPARENCY" />
+        <param name="randomSlideshow" type="radio" default="False" label="Random" description="RANDOM SLIDES">
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </param>
+        <param name="loop" type="radio" default="True" label="Loop" description="LOOP SLIDESHOW">
+            <option value="True">Yes</option>
+            <option value="False">No</option>
+        </param>
+        <param name="swfobject" type="radio" default="1" label="Load SWFObject" description="LOAD SWFOBJCET.JS">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+    </params>
+    <languages>
+		<language tag="en-GB">en-GB.mod_the_placid.ini</language>
+	</languages>
+</install>

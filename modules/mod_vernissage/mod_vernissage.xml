@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+        
+<install version="1.5" type="module" client="site">
+
+	<name>Vernissage</name>
+	<author>Codingfish (Achim Fischer)</author>
+	<authorEmail>info@codingfish.com</authorEmail> 
+	<authorUrl>www.codingfish.com</authorUrl>
+	<creationDate>June 2010</creationDate>
+	<copyright>Copyright (C) 2010 Codingfish Limited. All rights reserved.</copyright> 
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license> 
+	<version>1.0</version> 
+	<description>Module for Codingfish Vernissage. Displays Flickr photos of a specified user</description>
+	
+	<files>
+
+		<filename module="mod_vernissage">mod_vernissage.php</filename>
+		<filename module="mod_vernissage">index.html</filename>
+
+        <folder module="mod_vernissage">css</folder>       
+        <folder module="mod_vernissage">includes</folder>
+
+	</files>
+
+
+	<params>	
+
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+        <param name="flickr_apikey" type="text" default="80e0b939631d60c4f575b54d78f29a24" label="Flickr API key" description="Your Flickr API key" />        
+        <param name="flickr_username" type="text" default="codingfish" label="Flickr username" description="The Flickr username whose photos you want to display" />        
+
+
+        <param name="number" type="text" default="9" label="# of photos" description="Number of photos to get" />
+        <param name="number_row" type="text" default="3" label="# of photos per row" description="Number of photos in a row" />        
+
+        <param name="mode" type="list" label="Mode" default="1" description="Show either recently uploaded or random photos">
+            <option value="1">Recently uploaded</option>
+            <option value="2">Random</option>
+        </param>
+
+        <param name="cache_mode" type="radio" label="Cache mode" default="0" description="Turn cache for Flickr calls on or off">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+
+        <param name="cache_time" type="text" default="600" label="Cache time" description="Cache time in seconds" />        
+
+
+        <param name="show_poweredby" type="radio" label="Show powered by" default="1" description="Show powered by Vernissage?">
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </param>
+
+	</params>
+	
+</install>

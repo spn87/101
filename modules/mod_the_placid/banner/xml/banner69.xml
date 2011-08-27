@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Configuration panel -->
+<slideshow width = "250" height = "180"
+    startWith = "1" 
+    randomSlideshow = "true"
+		
+    backgroundColor = "0xffffff"
+    backgroundTransparency = "100"
+
+    loop = "true">
+<!-- End panel -->
+  <item>
+		<path>modules/mod_the_placid/banner/content/images/image1.jpg</path>
+		<link></link>
+		<target></target>
+
+		<transitionTime>1</transitionTime>
+		<slideShowTime>3</slideShowTime>
+	</item>
+  <item>
+		<path>modules/mod_the_placid/banner/content/images/image2.jpg</path>
+		<link></link>
+		<target></target>
+
+		<transitionTime>1</transitionTime>
+		<slideShowTime>3</slideShowTime>
+	</item>
+  <item>
+		<path>modules/mod_the_placid/banner/content/images/image3.jpg</path>
+		<link></link>
+		<target></target>
+
+		<transitionTime>1</transitionTime>
+		<slideShowTime>3</slideShowTime>
+	</item>
+  <item>
+		<path>modules/mod_the_placid/banner/content/images/image4.jpg</path>
+		<link></link>
+		<target></target>
+
+		<transitionTime>1</transitionTime>
+		<slideShowTime>3</slideShowTime>
+	</item>
+  <item>
+		<path>modules/mod_the_placid/banner/content/images/image5.jpg</path>
+		<link></link>
+		<target></target>
+
+		<transitionTime>1</transitionTime>
+		<slideShowTime>3</slideShowTime>
+	</item>
+</slideshow>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+	<name>Content - Core Design Lock Article plugin</name>
+  	<author>Daniel Rataj</author>
+  	<creationDate>September 21th, 2009</creationDate>
+  	<copyright>(C) 2007 - 2010 Great Joomla! All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL 3</license>
+  	<authorEmail>info@greatjoomla.com</authorEmail>
+  	<authorUrl>www.greatjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>DESC_CDLOCKARTICLE</description>
+	<files>
+		<filename plugin="cdlockarticle">cdlockarticle.php</filename>
+		<filename>cdlockarticle/css/cdlockarticle.css</filename>
+		<filename>cdlockarticle/css/index.html</filename>
+		<filename>cdlockarticle/images/index.html</filename>
+		<filename>cdlockarticle/images/loading.gif</filename>
+    	<filename>cdlockarticle/utils/js/jquery.cdlockarticle.js</filename>
+		<filename>cdlockarticle/utils/js/index.html</filename>
+		<filename>cdlockarticle/utils/index.html</filename>
+    	<filename>cdlockarticle/index.html</filename>
+		<filename>cdlockarticle/license-gpl.txt</filename>
+	</files>
+	<languages>
+    <language tag="en-GB">en-GB.plg_content_cdlockarticle.ini</language>
+	</languages>
+	<params>
+	<param name="theme" type="folderlist" default="ui-lightness" label="LABEL_THEME" description="DESC_THEME" directory="plugins/system/cdscriptegrator/libraries/jquery/theme" filter="" exclude="" />
+	</params>
+</install>
